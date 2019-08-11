@@ -6,11 +6,26 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  font-family: sans-serif;
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  position: relative;
+  background-color: $blue;
+  min-height: 812px;
+  min-width: 375px;
+  &__glass {
+    
+  }
 }

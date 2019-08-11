@@ -18,22 +18,28 @@
 
     <link rel="manifest" href="manifest.json" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+    
 
     <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
+     rel="shortcut icon" type="image/png"
+      href="https://github.com/KamilRozanski/HYDRAPP/blob/master/src/assets/pwa/icons/icon-192x192.png?raw=true"
     />
 
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1>Hello world - with simple PWA support!</h1>
+
+<main class="main">
+  <section class="app">
+    <section class="app__glass">
+        <img src="" alt="water-glass">
+      <div class="app__number app__number--js">0</div>
+    </section>
+    <button class="add__glass add__glass--js ">Add Glass</button>
+    <button class="remove__glass remove__glass--js ">Remove Glass</button>
+  </section>
+  <section class="autor">Kamil Rozanski &copy</section>
+</main>
 
     <script src="js/main.js"></script>
   </body>
