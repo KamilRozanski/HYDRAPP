@@ -1,6 +1,6 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 
 html {
   box-sizing: border-box;
@@ -13,19 +13,68 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: $roboto;
   background: lightgray;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .main {
-  position: relative;
   background-color: $blue;
   min-height: 812px;
   min-width: 375px;
-  &__glass {
-    
+}
+
+.app {
+  margin-top: 100px;
+
+  &__header {
+    color: $white;
+    font-size: 28px;
+    margin: 50px;
   }
+
+  &__glass {
+    position: relative;
+  }
+
+  &__number {
+    position: absolute;
+    width: 88px;
+    height: 98px;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 112px;
+    line-height: 100%;
+    vertical-align: center;
+  }
+}
+
+.add__glass {
+  display: block;
+  margin: 0 auto;
+  margin-top: 59px;
+  width: 216px;
+  height: 47px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px black;
+}
+
+.remove__glass {
+  display: block;
+  width: 184px;
+  height: 23px;
+  margin: 0 auto;
+  margin-top: 37px;
+  border: none;
+  background: none;
+  color: $remove__font__color;
+  font-size: 14px;
+}
+
+.autor {
+  margin-top: 100px;
 }

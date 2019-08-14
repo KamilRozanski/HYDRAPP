@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Site title</title>
-    <meta name="description" content="Description" />
+    <meta name="HYDRAPP" content="PWA Aplication" />
 
     <!-- Title -->
     <meta property="og:title" content="My water PWA APP" />
@@ -16,7 +16,7 @@
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="/src/pwa/manifest.json" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     
 
@@ -25,20 +25,21 @@
       href="https://github.com/KamilRozanski/HYDRAPP/blob/master/src/assets/pwa/icons/icon-192x192.png?raw=true"
     />
 
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="/css/main.css"/>
   </head>
   <body>
 
 <main class="main">
   <section class="app">
+    <section class="app__header">HYDRAPP</section>
     <section class="app__glass">
-        <img src="/src/assets/img/water-glass.png" alt="water-glass">
+        <img class="app__glass__img" src="https://github.com/KamilRozanski/HYDRAPP/blob/master/src/assets/img/water-glass.png?raw=true" alt="water-glass">
       <div class="app__number app__number--js">0</div>
     </section>
     <button class="add__glass add__glass--js ">Add Glass</button>
     <button class="remove__glass remove__glass--js ">Remove Glass</button>
   </section>
-  <section class="autor">Kamil Rozanski &copy</section>
+  <section class="autor">Kamil Rozanski &copy 2019</section>
 </main>
 
     <script src="js/main.js"></script>
