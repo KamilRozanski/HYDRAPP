@@ -27,14 +27,16 @@ const key = new Date().toISOString().slice(0, 10);
 addGlass.addEventListener('click', () => {
   if (number.innerHTML <= 9) {
     number.innerHTML++
+    localStorage.setItem(key, number.innerHTML);
+    console.log (key, localStorage)
   }
 })
 
 removeGlass.addEventListener('click', () => {
 if (number.innerHTML <= 10 && number.innerHTML > 0) {
   number.innerHTML--
+  localStorage.setItem(key, number.innerHTML);
+    console.log (key, localStorage);
 }
 })
 
-
-console.log(number.innerHTML);

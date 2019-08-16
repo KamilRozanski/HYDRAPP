@@ -42,14 +42,14 @@ body {
 
   &__number {
     position: absolute;
-    width: 88px;
-    height: 98px;
+    min-width: 88px;
+    min-height: 98px;
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 112px;
     line-height: 100%;
-    vertical-align: center;
+    text-align: center;
   }
 }
 
