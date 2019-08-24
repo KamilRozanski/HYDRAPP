@@ -318,6 +318,10 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+.disable-dbl-tap-zoom {
+  -ms-touch-action: manipulation;
+      touch-action: manipulation; }
+
 body {
   font-family: "Roboto", sans-serif;
   background: #3767AD;
