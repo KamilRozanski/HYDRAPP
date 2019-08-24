@@ -320,7 +320,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: lightgray;
+  background: #3767AD;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,6 +378,16 @@ body {
   background: none;
   color: #F5E5E7;
   font-size: 14px; }
+
+.removeAll__glasses {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 216px;
+  height: 47px;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black; }
 
 .summary {
   margin-top: 57px; }
