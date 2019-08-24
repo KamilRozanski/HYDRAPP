@@ -12,6 +12,9 @@ html {
   box-sizing: inherit;
 }
 
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;
+}
 body {
   font-family: $roboto;
   background: $blue;
