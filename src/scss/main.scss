@@ -75,6 +75,13 @@ body {
   font-size: 14px;
 }
 
+.summary{
+  margin-top: 57px;
+  &__info {
+    color: $white;
+  }
+}
+
 .autor {
-  margin-top: 100px;
+  margin: 50px 0 10px;
 }

@@ -20,23 +20,31 @@ if ('serviceWorker' in navigator) {
 const number = document.querySelector('.app__number--js');
 const addGlass = document.querySelector('.add__glass--js');
 const removeGlass = document.querySelector('.remove__glass--js');
+const summary = document.querySelector('.summary__info--js')
 const key = new Date().toISOString().slice(0, 10);
 
 
+if (!localStorage.getItem(key)) {
+  localStorage.setItem(key, 0);
+  summary.innerHTML = 'Today you drank 0 glasses of water';
+}
 
-addGlass.addEventListener('click', () => {
-  if (number.innerHTML <= 9) {
+addGlass.addEventListener('click', (e) => {
+  if (number.innerHTML <= 99) {
     number.innerHTML++
     localStorage.setItem(key, number.innerHTML);
-    console.log (key, localStorage)
+    summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glasses of water`);
   }
 })
 
-removeGlass.addEventListener('click', () => {
-if (number.innerHTML <= 10 && number.innerHTML > 0) {
+removeGlass.addEventListener('click', (e) => {
+if (number.innerHTML > 0) {
   number.innerHTML--
   localStorage.setItem(key, number.innerHTML);
-    console.log (key, localStorage);
-}
+  summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glasses of water`);
+} 
 })
+
+console.log (summary.innerHTML)
+
 
