@@ -19,16 +19,16 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  
 }
 
 .main {
-  background-color: $blue;
-  min-height: 812px;
-  min-width: 375px;
+  max-height: 812px;
+  max-width: 375px;
 }
 
 .app {
-  margin-top: 100px;
+  margin-top: 50px;
 
   &__header {
     color: $white;
@@ -85,7 +85,10 @@ body {
   box-shadow: 5px 5px 10px black;
 }
 .summary{
-  margin-top: 57px;
+  margin: 57px;
+  &__header {
+    margin: 40px;
+  }
   &__info {
     color: $white;
   }
