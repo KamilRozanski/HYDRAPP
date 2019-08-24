@@ -333,12 +333,11 @@ body {
   text-align: center; }
 
 .main {
-  background-color: #3767AD;
-  min-height: 812px;
-  min-width: 375px; }
+  max-height: 812px;
+  max-width: 375px; }
 
 .app {
-  margin-top: 100px; }
+  margin-top: 50px; }
   .app__header {
     color: #fff;
     font-size: 28px;
@@ -390,7 +389,9 @@ body {
           box-shadow: 5px 5px 10px black; }
 
 .summary {
-  margin-top: 57px; }
+  margin: 57px; }
+  .summary__header {
+    margin: 40px; }
   .summary__info {
     color: #fff; }
 
