@@ -21,12 +21,13 @@ const number = document.querySelector('.app__number--js');
 const addGlass = document.querySelector('.add__glass--js');
 const removeGlass = document.querySelector('.remove__glass--js');
 const summary = document.querySelector('.summary__info--js')
+const removeAllGlasses = document.querySelector('.removeAll__glasses--js');
 const key = new Date().toISOString().slice(0, 10);
 
 
 if (!localStorage.getItem(key)) {
   localStorage.setItem(key, 0);
-  summary.innerHTML = 'Today you drank 0 glasses of water';
+  
 }
 
 addGlass.addEventListener('click', (e) => {
@@ -38,13 +39,15 @@ addGlass.addEventListener('click', (e) => {
 })
 
 removeGlass.addEventListener('click', (e) => {
-if (number.innerHTML > 0) {
-  number.innerHTML--
-  localStorage.setItem(key, number.innerHTML);
-  summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glasses of water`);
-} 
+  if (number.innerHTML > 0) {
+    number.innerHTML--
+    localStorage.setItem(key, number.innerHTML);
+    summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glasses of water`);
+  }
 })
 
-console.log (summary.innerHTML)
-
-
+removeAllGlasses.addEventListener('click', () => {
+  number.innerHTML = '0';
+  localStorage.setItem(key, 0);
+  summary.innerHTML = 'Today you drank 0 glasses of water';
+});

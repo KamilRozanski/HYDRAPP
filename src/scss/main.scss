@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: $roboto;
-  background: lightgray;
+  background: $blue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,6 +75,15 @@ body {
   font-size: 14px;
 }
 
+.removeAll__glasses {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 216px;
+  height: 47px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px black;
+}
 .summary{
   margin-top: 57px;
   &__info {
