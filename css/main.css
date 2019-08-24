@@ -379,7 +379,12 @@ body {
   color: #F5E5E7;
   font-size: 14px; }
 
+.summary {
+  margin-top: 57px; }
+  .summary__info {
+    color: #fff; }
+
 .autor {
-  margin-top: 100px; }
+  margin: 50px 0 10px; }
 
 /*# sourceMappingURL=main.css.map */
