@@ -318,9 +318,9 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
-.disable-dbl-tap-zoom {
-  -ms-touch-action: manipulation;
-      touch-action: manipulation; }
+.app__disable-dbl-tap-zoom {
+  -ms-touch-action: none;
+      touch-action: none; }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -361,7 +361,7 @@ body {
     line-height: 100%;
     text-align: center; }
 
-.add__glass {
+.app__add__glass {
   display: block;
   margin: 0 auto;
   margin-top: 59px;
@@ -372,7 +372,7 @@ body {
           box-shadow: 5px 5px 10px black;
   background-color: #fff; }
 
-.remove__glass {
+.app__remove__glass {
   display: block;
   width: 184px;
   height: 23px;
@@ -383,7 +383,7 @@ body {
   color: #F5E5E7;
   font-size: 14px; }
 
-.removeAll__glasses {
+.app__removeAll__glasses {
   display: block;
   margin: 0 auto;
   margin-top: 40px;
