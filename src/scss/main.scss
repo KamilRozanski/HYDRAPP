@@ -12,8 +12,8 @@ html {
   box-sizing: inherit;
 }
 
-.disable-dbl-tap-zoom {
-  touch-action: manipulation;
+.app__disable-dbl-tap-zoom {
+  touch-action: none;
 }
 body {
   font-family: $roboto;
@@ -56,7 +56,7 @@ body {
   }
 }
 
-.add__glass {
+.app__add__glass {
   display: block;
   margin: 0 auto;
   margin-top: 59px;
@@ -67,7 +67,7 @@ body {
   background-color: $white;
 }
 
-.remove__glass {
+.app__remove__glass {
   display: block;
   width: 184px;
   height: 23px;
@@ -79,7 +79,7 @@ body {
   font-size: 14px;
 }
 
-.removeAll__glasses {
+.app__removeAll__glasses {
   display: block;
   margin: 0 auto;
   margin-top: 40px;

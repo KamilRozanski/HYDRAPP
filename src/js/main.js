@@ -1,5 +1,7 @@
 "use strict";
 
+import { deepEqual } from "assert";
+
 // service worker registration - remove if you're not going to use it
 
 if ('serviceWorker' in navigator) {
@@ -18,36 +20,48 @@ if ('serviceWorker' in navigator) {
 
 
 const number = document.querySelector('.app__number--js');
-const addGlass = document.querySelector('.add__glass--js');
-const removeGlass = document.querySelector('.remove__glass--js');
+const addGlass = document.querySelector('.app__add__glass--js');
+const removeGlass = document.querySelector('.app__remove__glass--js');
 const summary = document.querySelector('.summary__info--js')
-const removeAllGlasses = document.querySelector('.removeAll__glasses--js');
+const removeAllGlasses = document.querySelector('.app__removeAll__glasses--js');
 const key = new Date().toISOString().slice(0, 10);
 
 
 if (!localStorage.getItem(key)) {
   localStorage.setItem(key, 0);
-  
 }
 
-addGlass.addEventListener('click', (e) => {
-  if (number.innerHTML <= 99) {
+addGlass.addEventListener('click', () => {
+   
+  if (number.innerHTML <= 0) {
     number.innerHTML++
     localStorage.setItem(key, number.innerHTML);
-    summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glasses of water`);
-  }
-})
-
-removeGlass.addEventListener('click', (e) => {
-  if (number.innerHTML > 0) {
-    number.innerHTML--
-    localStorage.setItem(key, number.innerHTML);
-    summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glasses of water`);
-  }
-})
-
-removeAllGlasses.addEventListener('click', () => {
-  number.innerHTML = '0';
-  localStorage.setItem(key, 0);
-  summary.innerHTML = 'Today you drank 0 glasses of water';
+    summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glass of water`);
+  } else if (number.innerHTML >= 1) {
+    number.innerHTML++
+  localStorage.setItem(key, number.innerHTML);
+  summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glasses of water`);
+    }
 });
+
+
+
+
+  removeGlass.addEventListener('click', () => {
+    if (number.innerHTML > 2) {
+      number.innerHTML--
+      localStorage.setItem(key, number.innerHTML);
+      summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glasses of water`);
+    } else if (number.innerHTML <= 2 && number.innerHTML > 0 ) {
+      number.innerHTML--
+      localStorage.setItem(key, number.innerHTML);
+      summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glass of water`);
+      console.log("else if")
+    }
+  });
+
+  removeAllGlasses.addEventListener('click', () => {
+    number.innerHTML = '0';
+    localStorage.setItem(key, 0);
+    summary.innerHTML = 'Today you drank 0 glasses of water';
+  });
