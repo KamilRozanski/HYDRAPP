@@ -1,6 +1,6 @@
 {
-  "name": "WTF: PWA HYDRAPP",
-  "short_name": "WTF: PWA HYDRAPP",
+  "name": "PWA HYDRAPP",
+  "short_name": "PWA HYDRAPP",
   "theme_color": "#000000",
   "background_color": "#000000",
   "display": "standalone",

@@ -12,11 +12,9 @@ html {
   box-sizing: inherit;
 }
 
-.disable-dbl-tap-zoom {
-  touch-action: manipulation;
-}
 
-.app__disable-dbl-tap-zoom {
+
+.disable-dbl-tap-zoom {
   touch-action: none;
 }
 body {
