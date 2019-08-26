@@ -56,7 +56,6 @@ addGlass.addEventListener('click', () => {
       number.innerHTML--
       localStorage.setItem(key, number.innerHTML);
       summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glass of water`);
-      console.log("else if")
     }
   });
 
