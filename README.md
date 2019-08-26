@@ -1,9 +1,10 @@
-# wtf-gulp-starter
+# This is basic PWA application where you can count how many glass of water did you drink.
 
-`npm install -g gulp-cli`
+## Technology 
+* HTML 🎓
+* CSS 🎓
+* Java Script 🎓
 
-`npm install`
+![notebook](https://github.com/KamilRozanski/notebook-JS/blob/master/src/assets/img/readmeCover?raw=true)
 
-`gulp`
 
-To publish your page using github pages use `npm run deploy`
