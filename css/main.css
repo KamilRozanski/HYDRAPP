@@ -318,7 +318,7 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
-.app__disable-dbl-tap-zoom {
+.disable-dbl-tap-zoom {
   -ms-touch-action: none;
       touch-action: none; }
 
