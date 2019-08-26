@@ -5,6 +5,6 @@
 * CSS 🎓
 * Java Script 🎓
 
-![notebook](https://github.com/KamilRozanski/notebook-JS/blob/master/src/assets/img/readmeCover?raw=true)
+![HYDRAPP](https://github.com/KamilRozanski/HYDRAPP/blob/master/src/assets/img/readmeCover.png?raw=true)
 
 
