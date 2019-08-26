@@ -1,4 +1,4 @@
-# This is basic PWA application where you can count how many glass of water did you drink.
+# This is basic PWA application where you are able to count how many glasses of water did you drink per day.
 
 ## Technology 
 * HTML 🎓
