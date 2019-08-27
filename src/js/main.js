@@ -34,13 +34,14 @@ if (!localStorage.getItem(key)) {
 addGlass.addEventListener('click', () => {
    
   if (number.innerHTML <= 0) {
+    alert("Krycha zaczyna flaszke :) ")
     number.innerHTML++
     localStorage.setItem(key, number.innerHTML);
-    summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glass of water`);
+    summary.innerHTML = (`${key} Krycha wypil ${localStorage.getItem(key, number.innerHTML)} lufke`);
   } else if (number.innerHTML >= 1) {
     number.innerHTML++
   localStorage.setItem(key, number.innerHTML);
-  summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glasses of water`);
+  summary.innerHTML = (`${key} Krycha wypil ${localStorage.getItem(key, number.innerHTML)} lufek`);
     }
 });
 
@@ -51,11 +52,11 @@ addGlass.addEventListener('click', () => {
     if (number.innerHTML > 2) {
       number.innerHTML--
       localStorage.setItem(key, number.innerHTML);
-      summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glasses of water`);
+      summary.innerHTML = (`${key} Krycha wypil ${localStorage.getItem(key, number.innerHTML)} lufke`);
     } else if (number.innerHTML <= 2 && number.innerHTML > 0 ) {
       number.innerHTML--
       localStorage.setItem(key, number.innerHTML);
-      summary.innerHTML = (`${key} you drank ${localStorage.getItem(key, number.innerHTML)} glass of water`);
+      summary.innerHTML = (`${key} Krycha wypil ${localStorage.getItem(key, number.innerHTML)} lufek`);
     }
   });
 
